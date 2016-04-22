@@ -6,16 +6,17 @@
   "dependencies" : {
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-*",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0-*"
-    },
+    "Microsoft.NETCore.Platforms": "1.0.1-*",
     "NetStandardExamples.Shared" : {
       "target": "project"
     }
   },
   "frameworks": {
+    "net46" : {},
     "netcoreapp1.0": {
+       "dependencies": {
+        "NETStandard.Library": "1.5.0-*"
+      },
       "imports": [
         "portable-net45+wp80+win8+wpa81+dnxcore50",
         "portable-net45+win8+wp8"
