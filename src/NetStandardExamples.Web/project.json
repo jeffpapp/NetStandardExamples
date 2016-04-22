@@ -6,24 +6,20 @@
   "dependencies": {
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-*",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
-    "Microsoft.NETCore.Platforms": "1.0.1-*",
     "NetStandardExamples.Shared": {
       "target": "project"
     }
   },
   "frameworks": {
-    "net451": {},
+    "net461": {},
     "netcoreapp1.0": {
+      "imports": "portable-net45+win8+wp8",
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
           "version": "1.0.0-rc2-*"
         }
-      },
-      "imports": [
-        "portable-net45+win8+wp8",
-        "portable-net45+win8+wp8+wpa81"
-      ]
+      }
     }
   },
   "tools": {
@@ -37,5 +33,5 @@
   },
   "content": [
     "config.json"
-  ],
+  ]
 }
