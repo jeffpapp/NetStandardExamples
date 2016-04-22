@@ -5,12 +5,20 @@
   },
   "dependencies" : {
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-*",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*"    
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0-*"
+    },
+    "NetStandardExamples.Shared" : {
+      "target": "project"
+    }
   },
   "frameworks": {
     "netcoreapp1.0": {
       "imports": [
-        "portable-net45+wp80+win8+wpa81+dnxcore50"
+        "portable-net45+wp80+win8+wpa81+dnxcore50",
+        "portable-net45+win8+wp8"
       ]
     }
   },
@@ -22,5 +30,8 @@
   },
   "scripts": {
     "postpublish": "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%"
-  }
+  },
+  "content": [    
+    "config.json"
+  ]
 }
