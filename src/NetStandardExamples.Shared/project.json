@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "description": "Shared Code",
+  "authors": [ "jpapp" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {   
+      "NETStandard.Library": "1.5.0-rc2-*",
+      "Microsoft.EntityFrameworkCore.SqlServer" : "1.0.0-rc2-*"
+  },
+
+  "frameworks": {
+    "netstandard1.3": {
+      "imports": [
+        "portable-net452+win81"
+      ]
+    }
+  }
+}
