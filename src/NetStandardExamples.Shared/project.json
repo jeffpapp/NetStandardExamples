@@ -6,16 +6,14 @@
   "projectUrl": "",
   "licenseUrl": "",
 
-  "dependencies": {   
-      "NETStandard.Library": "1.5.0-rc2-*",
+  "dependencies": {      
       "Microsoft.EntityFrameworkCore.SqlServer" : "1.0.0-rc2-*"
   },
 
   "frameworks": {
-    "net451" : {},
     "netstandard1.3": {
-      "imports": [
-        "portable-net452+win81"
+      "imports": [        
+        "portable-net45+win8+wp8"
       ]
     }
   }

@@ -4,17 +4,20 @@
     "emitEntryPoint": true
   },
   "dependencies": {
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0-rc2-*"
-    },
-    "NetStandardExamples.Shared" : {
+    "NetStandardExamples.Shared": {
       "target": "project"
     }
   },
   "frameworks": {
+    "net461": {},
     "netcoreapp1.0": {
-      "imports": "portable-net45+win8+wp8"
+      "imports": "portable-net45+win8+wp8",
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0-rc2-*"
+        }
+      }
     }
   }
 }
