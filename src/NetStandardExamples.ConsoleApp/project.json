@@ -8,13 +8,13 @@
       "type": "platform",
       "version": "1.0.0-rc2-*"
     },
-    "NetstandardExamples.Shared" : {
+    "NetStandardExamples.Shared" : {
       "target": "project"
     }
   },
   "frameworks": {
     "netcoreapp1.0": {
-      "imports": "dnxcore50"
+      "imports": "portable-net45+win8+wp8"
     }
   }
 }
